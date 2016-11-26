@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText ed1, ed2;
     TextView tv;
-    int num1, num2, res;
+    float num1, num2, res;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,37 +23,37 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void add(View view) {
-        num1 = Integer.parseInt(ed1.getText().toString());
-        num2 = Integer.parseInt(ed2.getText().toString());
+        num1 = Float.parseFloat(ed1.getText().toString());
+        num2 = Float.parseFloat(ed2.getText().toString());
         res = num1 + num2;
-        tv.setText(res);
+        tv.setText(res+"");
     }
 
     public void sub(View view) {
 
-        num1 = Integer.parseInt(ed1.getText().toString());
-        num2 = Integer.parseInt(ed2.getText().toString());
+        num1 =Float.parseFloat(ed1.getText().toString());
+        num2 =Float.parseFloat(ed2.getText().toString());
         res = num1 - num2;
-        tv.setText(res);
+        tv.setText(res+"");
 
     }
 
     public void mul(View view) {
 
-        num1 = Integer.parseInt(ed1.getText().toString());
-        num2 = Integer.parseInt(ed2.getText().toString());
+        num1 = Float.parseFloat(ed1.getText().toString());
+        num2 = Float.parseFloat(ed2.getText().toString());
         res = num1 * num2;
-        tv.setText(res);
+        tv.setText(res+"");
 
 
     }
 
     public void div(View view) {
-        num1 = Integer.parseInt(ed1.getText().toString());
-        num2 = Integer.parseInt(ed2.getText().toString());
+        num1 =Float.parseFloat(ed1.getText().toString());
+        num2 =Float.parseFloat(ed2.getText().toString());
         if (num2 != 0) {
             res = num1 / num2;
-            tv.setText(res);
+            tv.setText(res+"");
         }
 
 
